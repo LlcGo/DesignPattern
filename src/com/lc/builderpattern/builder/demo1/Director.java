@@ -8,7 +8,7 @@ package com.lc.builderpattern.builder.demo1;
 public class Director {
     //声明builder类型的变量
     private Builder builder;
-    public Director(Builder builder){
+    public Director(Builder builder) {
         this.builder = builder;
     }
     //组装自行车

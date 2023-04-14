@@ -8,6 +8,8 @@ package com.lc.builderpattern.builder.demo2;
 public class Phone {
     private String cpu;
     private String scree;
+    private String memory;
+    private String minboard;
 
     @Override
     public String toString() {
@@ -18,10 +20,6 @@ public class Phone {
                 ", minboard='" + minboard + '\'' +
                 '}';
     }
-
-    private String memory;
-    private String minboard;
-
     //私有构造方法
     private Phone(Budiler budiler){
         this.cpu = budiler.cpu;
