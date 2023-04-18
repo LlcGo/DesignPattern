@@ -46,8 +46,8 @@ public class Phone {
            return this;
        }
 
-       public static Phone budile(){
-           return this.;
+       public  Phone budile(){
+           return new Phone(this);
        }
    }
 }
