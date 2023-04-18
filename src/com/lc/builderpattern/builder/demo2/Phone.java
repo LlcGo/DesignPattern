@@ -20,13 +20,21 @@ public class Phone {
                 ", minboard='" + minboard + '\'' +
                 '}';
     }
-   public static class Budiler{
+
+    private Phone(Budiler budiler) {
+        this.cpu = budiler.cpu;
+        this.scree = budiler.cpu;
+        this.memory = budiler.cpu;
+        this.minboard = budiler.cpu;
+    }
+
+    public static final class Budiler{
        private String cpu;
        private String scree;
        private String memory;
        private String minboard;
 
-       public Budiler setCpu(String cpu) {
+       public Budiler cpu(String cpu) {
            this.cpu = cpu;
            return this;
        }
@@ -36,12 +44,12 @@ public class Phone {
            return this;
        }
 
-       public Budiler setMemory(String memory) {
+       public Budiler memory(String memory) {
            this.memory = memory;
            return this;
        }
 
-       public Budiler setMinboard(String minboard) {
+       public Budiler minboard(String minboard) {
            this.minboard = minboard;
            return this;
        }
