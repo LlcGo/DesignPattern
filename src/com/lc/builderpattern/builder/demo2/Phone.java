@@ -23,9 +23,9 @@ public class Phone {
 
     private Phone(Budiler budiler) {
         this.cpu = budiler.cpu;
-        this.scree = budiler.cpu;
-        this.memory = budiler.cpu;
-        this.minboard = budiler.cpu;
+        this.scree = budiler.scree;
+        this.memory = budiler.memory;
+        this.minboard = budiler.minboard;
     }
 
     public static final class Budiler{
