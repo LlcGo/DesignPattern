@@ -1,10 +1,8 @@
 package com.lc.controller;
 
+import com.lc.framework.context.ApplicationContext;
+import com.lc.framework.context.support.ClassPathXmlApplicationContext;
 import com.lc.service.UserService;
-import org.springframework.beans.factory.xml.XmlBeanFactory;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.core.io.ClassPathResource;
 
 /**
  * @Author Lc
@@ -12,7 +10,7 @@ import org.springframework.core.io.ClassPathResource;
  * @Description
  */
 public class UserConteroller {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         //执行完直接会实例化创建对象
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         //执行之后不会创建对象
