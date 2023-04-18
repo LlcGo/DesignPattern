@@ -20,42 +20,34 @@ public class Phone {
                 ", minboard='" + minboard + '\'' +
                 '}';
     }
-    //私有构造方法
-    private Phone(Budiler budiler){
-        this.cpu = budiler.cpu;
-        this.scree = budiler.scree;
-        this.memory = budiler.memory;
-        this.minboard = budiler.minboard;
-    };
+   public static class Budiler{
+       private String cpu;
+       private String scree;
+       private String memory;
+       private String minboard;
 
-    public static final class Budiler{
-        private String cpu;
-        private String scree;
-        private String memory;
-        private String minboard;
+       public Budiler setCpu(String cpu) {
+           this.cpu = cpu;
+           return this;
+       }
 
-        public Budiler cpu(String cpu){
-            this.cpu = cpu;
-            return this;
-        }
+       public Budiler scree(String scree) {
+           this.scree = scree;
+           return this;
+       }
 
-        public Budiler scree(String scree){
-            this.scree = scree;
-            return this;
-        }
+       public Budiler setMemory(String memory) {
+           this.memory = memory;
+           return this;
+       }
 
-        public Budiler memory(String memory){
-            this.memory = memory;
-            return this;
-        }
+       public Budiler setMinboard(String minboard) {
+           this.minboard = minboard;
+           return this;
+       }
 
-        public Budiler minboard(String minboard){
-            this.minboard = minboard;
-            return this;
-        }
-        //使用构建者创建phone
-          public  Phone budile(){
-           return new Phone(this);
-          }
-    }
+       public static Phone budile(){
+           return this.;
+       }
+   }
 }
