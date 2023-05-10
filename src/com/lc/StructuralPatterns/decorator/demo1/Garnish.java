@@ -7,6 +7,7 @@ package com.lc.StructuralPatterns.decorator.demo1;
  */
 public abstract class Garnish extends FastFood{
 
+    //组合fastfood 目的给这个的子类把他包起来使用
     private FastFood fastFood;
 
     public Garnish(FastFood fastFood,float price, String desc) {
@@ -14,6 +15,7 @@ public abstract class Garnish extends FastFood{
         this.fastFood = fastFood;
     }
 
+    //就要抱起来就要有get方法来获取价钱然后加起来
     public FastFood getFastFood() {
         return fastFood;
     }

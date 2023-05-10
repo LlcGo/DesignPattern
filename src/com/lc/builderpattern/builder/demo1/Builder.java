@@ -3,7 +3,7 @@ package com.lc.builderpattern.builder.demo1;
 /**
  * @Author Lc
  * @Date 2023/4/10
- * @Description
+ * @Description 抽象建造者
  */
 public abstract class Builder {
       //声明bilke类型的变量，并进行赋值

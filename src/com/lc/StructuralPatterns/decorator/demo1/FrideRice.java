@@ -12,6 +12,7 @@ public class FrideRice extends FastFood{
         super(10, "炒饭");
     }
 
+    //调用父类的getpricie
     @Override
     public float cost() {
         return getPrice();

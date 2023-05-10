@@ -1,5 +1,7 @@
 package com.lc.behavioralPattern.strategy;
 
+import java.util.HashMap;
+
 /**
  * @Author Lc
  * @Date 2023/4/12

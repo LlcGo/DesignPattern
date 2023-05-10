@@ -1,5 +1,8 @@
 package com.lc.StructuralPatterns.adapter.demo2;
 
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * @Author Lc
  * @Date 2023/4/10

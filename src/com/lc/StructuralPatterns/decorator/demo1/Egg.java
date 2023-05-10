@@ -7,7 +7,7 @@ package com.lc.StructuralPatterns.decorator.demo1;
  */
 public class Egg extends Garnish{
 
-
+    //开始套娃
     public Egg(FastFood fastFood) {
         super(fastFood, 1, "鸡蛋");
     }

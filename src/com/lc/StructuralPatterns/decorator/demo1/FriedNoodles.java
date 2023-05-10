@@ -12,6 +12,7 @@ public class FriedNoodles extends FastFood{
         super(9, "炒面");
     }
 
+    //调用父类的getpricie
     @Override
     public float cost() {
         return getPrice();

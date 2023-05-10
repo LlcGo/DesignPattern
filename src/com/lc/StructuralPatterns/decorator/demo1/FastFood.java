@@ -30,5 +30,6 @@ public abstract class FastFood {
         this.desc = desc;
     }
 
+    //不确定的方法
     public abstract float cost();
 }
