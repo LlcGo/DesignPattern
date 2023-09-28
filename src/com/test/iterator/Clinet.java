@@ -1,5 +1,8 @@
 package com.test.iterator;
 
+import java.util.HashMap;
+import java.util.Iterator;
+
 /**
  * @Author Lc
  * @Date 2023/5/10
@@ -12,7 +15,6 @@ public class Clinet {
         ObjcetAggregateImpl objcetAggregate = new ObjcetAggregateImpl();
         objcetAggregate.add(lw);
         objcetAggregate.add(ll);
-
         IteratiorImp iterator = (IteratiorImp)objcetAggregate.getIterator();
         while (iterator.isNext()){
             Object o = iterator.hasNext();
